@@ -74,8 +74,8 @@ h1 {
   font-size: 3rem;
 }
 
-a:link,
-a:visited {
+.nav_list a:link,
+.nav_list a:visited {
   text-decoration: none;
   display: inline-block;
   padding: 1.6rem;
@@ -84,8 +84,8 @@ a:visited {
   color: #d6eeff;
 }
 
-a:hover,
-a:active {
+.nav_list a:hover,
+.nav_list a:active {
   text-decoration: none;
   display: inline-block;
   padding: 1.6rem;
@@ -93,6 +93,7 @@ a:active {
   border-radius: 15rem;
   color: #001829;
   box-shadow: inset 0 0 0.2em #0083e0;
+  transition: all 0.3s;
 }
 
 h2 {
@@ -197,6 +198,12 @@ h3 {
   margin-bottom: 1.6rem;
 }
 
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 0.5rem 0.5rem 1em rgba(0, 131, 224, 0.9);
+  transition: 0.5s;
+}
+
 .study {
   height: 6rem;
 }
@@ -216,14 +223,72 @@ h3 {
 
 .work_gallery {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 150rem;
 }
 
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 12rem;
 }
 
 .gallery_header {
   grid-column: 1 / -1;
+}
+
+.gallery_item {
+  overflow: hidden;
+}
+
+.gallery_item img {
+  height: 20rem;
+  display: block;
+  width: 100%;
+  transition: all 0.6s;
+}
+
+.gallery_item img:hover {
+  transform: scale(1.3);
+}
+
+.blue_text {
+  color: #1864ab;
+}
+
+.contact {
+  margin: 0 auto;
+  max-width: 90rem;
+  background-color: #10183c;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.cta_header {
+  grid-column: 1/ -1;
+  justify-self: left;
+  color: #d0ebff;
+}
+.cta_header h3 {
+  margin-left: 6rem;
+}
+
+.cta_image {
+  grid-row: 2 / 5;
+}
+
+.cta img {
+  height: 30rem;
+}
+
+.twitter,
+.mail,
+.fb {
+  grid-column: 2 / -1;
+  justify-self: center;
 }
