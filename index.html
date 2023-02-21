@@ -9,15 +9,17 @@
     <title>Maksymilian Matoga</title>
   </head>
   <body>
-    <header class="main_header">
+    <nav>
       <div class="main_nav">
         <ul class="nav_list">
-          <li><a href="omnie.html">O mnie</a></li>
-          <li><a href="">Galeria</a></li>
+          <li><a href="#about_me">O mnie</a></li>
+          <li><a href="#gallery">Galeria</a></li>
           <li><a href="contacts.html">Kontakt</a></li>
           <li><a href="">English</a></li>
         </ul>
       </div>
+    </nav>
+    <header class="main_header">
       <div class="main_data">
         <div class="portrait">
           <a href="#">
@@ -36,16 +38,42 @@
       </div>
     </header>
     <section class="container">
-      <div class="about_me">
+      <div class="about_me" id="about_me">
         <div class="bio">
-          <h2>Kim jestem?</h2>
-          <p>
-            Człowiekiem pozytywnie nastawionym do ludzi oraz świata. Interesują
-            mnie nowe technologie. Chcę zwiększać swoje umiejętności. Posiadam
-            ambicję do ciągłego rozwoju i doskonalenia własnych umiejętności.
-            Zdecydowałem się na zmianę zawodu, ponieważ widzę szansę do
-            realizacji i automotywacji.
-          </p>
+          <div class="bio_header">
+            <h2>Kim jestem?</h2>
+          </div>
+          <div class="bio_img_right">
+            <img
+              src="images/aim_high.jpg"
+              alt="Zdjęcie dziecka na szczycie drabiny."
+            />
+          </div>
+          <div class="bio_text_left1">
+            Ambitną osobą, która wysoko mierzy i odnajduje się pokonywaniu
+            swoich granic. Odnajduję motywację w dążeniu do osiągnięcia
+            postawionego sobie celu.
+          </div>
+          <div class="bio_img_left">
+            <img
+              src="images/new_technologies.jpg"
+              alt="Zdjęcie białego robota na brązowym tle."
+            />
+          </div>
+          <div class="bio_text_right">
+            Fascynuję się nowymi technologiami. Śledzę ich rozwój i nowe
+            możliwości. Dostrzegam w nich szansę, a nie zagrożenie.
+          </div>
+          <div class="bio_img_right">
+            <img
+              src="images/studying.jpg"
+              alt="Zdjęcie człowieka pracującego przy komputerze."
+            />
+          </div>
+          <div class="bio_text_left2">
+            Nauka i zdobywanie nowych umiejętności nie stanowią dla mnie
+            problemu. Satysfakcję daje mi każdy krok na drodze do rozwoju.
+          </div>
         </div>
         <div class="education">
           <h3 class="about_me_header">Wykształcenie:</h3>
@@ -112,6 +140,16 @@
               markecie po prace porządkowe).
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="work_gallery" id="gallery">
+      <div class="gallery">
+        <div class="gallery_header">
+          <h3>Przykładowe prace:</h3>
+        </div>
+        <div>
+          <img src="images/fake-human-circle-img.png" alt="" />
         </div>
       </div>
     </section>
