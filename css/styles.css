@@ -10,6 +10,7 @@ body {
   /* background-color: #ccc; */
   color: #001829;
   margin: 0;
+  font-size: 2rem;
 }
 
 ul {
@@ -22,11 +23,33 @@ li {
   list-style-type: none;
 }
 
+.navbar {
+  background-color: #d0ebff;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  margin-right: 0 auto 0 0;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+}
+
+.navbar-expand-lg {
+  max-width: 100%;
+  justify-content: space-between;
+}
+
 .main_nav {
   margin: 0 auto;
   padding-top: 2.4rem;
   max-width: 160rem;
   background-color: #d0ebff;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 .nav_list {
