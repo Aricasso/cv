@@ -56,6 +56,7 @@ instead, 1rem = 1em = 16px*/
     .portrait,
     .personal {
       align-self: center;
+      margin-bottom: 2rem;
     }
 
     .portrait {
@@ -212,16 +213,71 @@ instead, 1rem = 1em = 16px*/
   /* ****************************** */
 
   @media (max-width: 34em) {
-    .grid {
-      row-gap: 4.8rem;
+    .main_header {
+      max-width: 45rem;
     }
 
-    .grid--2--cols,
-    .grid--3--cols,
-    .grid--4--cols {
+    .portrait {
+      height: 12rem;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .personal_data li {
+      font-size: 2rem;
+    }
+
+    .mb-2 {
+      gap: 1rem;
+    }
+
+    .bio {
+      max-width: 40rem;
+      column-gap: 2rem;
+      font-size: 1.6rem;
+    }
+
+    .bio img {
+      height: 12rem;
+      width: 12rem;
+    }
+
+    .education {
+      max-width: 40rem;
       grid-template-columns: 1fr;
+      margin-bottom: 6rem;
     }
 
+    .card {
+      margin: 0 auto;
+      max-width: 25rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .work {
+      margin: 0 auto;
+      max-width: 40rem;
+      grid-template-columns: 3fr 7fr;
+      font-size: 1.6rem;
+    }
+
+    .work_gallery {
+      max-width: 40rem;
+    }
+
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery_item img {
+      height: 15rem;
+      width: 75%;
+    }
     .hero {
       padding: 0 3.2rem;
     }
@@ -260,22 +316,35 @@ instead, 1rem = 1em = 16px*/
       grid-template-columns: 1fr;
     }
 
-    .gallery {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.2rem;
+    .contact {
+      max-width: 40rem;
+
+      margin-bottom: 8rem;
     }
 
     .cta {
-      grid-template-columns: 1fr;
+      max-width: 40rem;
+      grid-template-columns: 3fr 1fr;
     }
 
-    .cta-img-box {
-      height: 32rem;
-      grid-row: 1;
+    .cta_image {
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
     }
 
-    .cta-text-box {
-      padding: 3.2rem;
+    .cta img {
+      height: 20rem;
+    }
+
+    .cta svg {
+      height: 5rem;
+    }
+
+    .twitter,
+    .mail,
+    .fb {
+      grid-column: 2 / -1;
+      justify-self: center;
     }
   }
 

@@ -60,6 +60,23 @@ li {
   margin-right: 2rem;
 }
 
+.mb-2 {
+  gap: 2rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-nav .nav-link.active {
+  color: #d6eeff;
+}
+.navbar-nav .nav-link.active:hover {
+  color: #001829;
+  font-weight: 600;
+}
+
 .main_header {
   margin: 0 auto;
   max-width: 160rem;
@@ -97,18 +114,18 @@ h1 {
   font-size: 3rem;
 }
 
-.nav_list a:link,
-.nav_list a:visited {
+.nav-link:link,
+.nav-link:visited {
   text-decoration: none;
   display: inline-block;
   padding: 1.6rem;
   background-color: #0083e0;
-  border-radius: 15rem;
+  border-radius: 3rem;
   color: #d6eeff;
 }
 
-.nav_list a:hover,
-.nav_list a:active {
+.nav-link:hover,
+.nav-link:active {
   text-decoration: none;
   display: inline-block;
   padding: 1.6rem;
