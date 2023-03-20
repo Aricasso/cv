@@ -29,3 +29,16 @@ ul {
   list-style-type: none;
   font-size: 2.5rem;
 }
+
+h3 {
+  font-size: 4rem;
+}
+
+.samples {
+  display: grid;
+  max-width: 160rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rem;
+}
