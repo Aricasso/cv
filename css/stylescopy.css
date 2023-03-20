@@ -1,0 +1,118 @@
+/* BACKGROUND COLORS */
+/* 
+#edf2ff
+#91a7ff 
+*/
+
+/* FONTS COLORS */
+/* 
+#495057 
+#868e96
+*/
+
+/* Header section */
+
+.header {
+  max-width: 100%;
+  background-color: #edf2ff;
+}
+
+.hero-section {
+  display: grid;
+  margin: 0 auto;
+  max-width: 160rem;
+  grid-template-columns: 3fr 3fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait-img {
+  margin: 15rem 0;
+  width: 40rem;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(145, 167, 255, 0.5);
+}
+
+.menu {
+  display: flex;
+  max-width: 160rem;
+  margin: 0 auto;
+  justify-content: end;
+}
+
+.button-menu {
+  margin: 3rem 3rem;
+  background-color: #91a7ff;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0;
+}
+
+.personal-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header {
+  font-size: 6rem;
+  padding: 5rem;
+}
+.secondary-header {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.bio-header {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.bio-text {
+  color: #868e96;
+  font-size: 2.5rem;
+  line-height: 1.6;
+}
+
+.bio-img {
+  width: 30rem;
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+}
+
+.skills {
+  grid-column: 1 / -1;
+  display: grid;
+  margin: 10rem auto 0;
+  grid-template-columns: 50rem 50rem;
+  justify-items: center;
+}
+
+.skill-img {
+  width: 30rem;
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+.skill-list {
+  grid-column: 2;
+  border: 2px solid #495057;
+  background-color: #edf2ff;
+  width: 40rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  box-shadow: 5px 5px 10px #495057;
+}
+
+.skills-header {
+  font-size: 3rem;
+}
+
+.skills-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

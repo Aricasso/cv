@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #495057;
+  font-size: 2rem;
+}
+
+.container {
+  display: grid;
+  max-width: 160rem;
+  margin: 0 auto;
+  grid-template-columns: 100rem 30rem;
+  column-gap: 25rem;
+  align-items: center;
+  margin-top: 20rem;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 2.5rem;
+}
