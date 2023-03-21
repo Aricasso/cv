@@ -51,6 +51,12 @@
   border: 0;
 }
 
+.button-menu:hover,
+.button-menu:active {
+  background-color: #edf2ff;
+  transition: all 0.5s;
+}
+
 .personal-name {
   display: flex;
   flex-direction: column;
@@ -86,6 +92,8 @@
   grid-row: 1 / -1;
 }
 
+/* SKILLS */
+
 .skills {
   grid-column: 1 / -1;
   display: grid;
@@ -103,12 +111,17 @@
 .skill-list {
   grid-column: 2;
   border: 2px solid #495057;
-  background-color: #91a7ff;
+  background-image: linear-gradient(
+    to right,
+    rgba(145, 167, 255, 0.95),
+    rgba(145, 167, 255, 0.4)
+  );
   width: 40rem;
   padding-left: 1.5rem;
   padding-top: 1.5rem;
-  box-shadow: 5px 5px 10px #495057;
+  box-shadow: 5px 5px 10px rgba(92, 124, 250, 0.6);
   color: #edf2ff;
+  border-radius: 10px;
 }
 
 .skills-header {
@@ -120,6 +133,8 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* EDUCATION SECTION */
 
 .education {
   grid-column: 1 / -1;
@@ -142,7 +157,8 @@
   width: 40rem;
   padding-left: 1.5rem;
   padding-top: 1.5rem;
-  box-shadow: 5px 5px 10px #495057;
+  box-shadow: 5px 5px 10px rgba(145, 167, 255, 0.7);
+  border-radius: 15px;
 }
 
 .education-flex {
@@ -151,7 +167,10 @@
   gap: 1.5rem;
   align-items: center;
   text-align: center;
+  margin-bottom: 5rem;
 }
+
+/* WORK EXPERIENCE */
 
 .experience {
   display: grid;
@@ -181,4 +200,36 @@
 .sample-header {
   margin-bottom: 5rem;
   margin-left: -10rem;
+}
+
+/* CONTACT SECTION */
+
+.cta {
+  display: grid;
+  max-width: 160rem;
+  margin: 15rem auto 10rem;
+  color: #868e96;
+}
+
+.cta-header {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 8rem;
+}
+
+.contact-link:hover {
+  transform: rotate(1turn);
+  transition: all 1.5s;
+}
+
+/* FOOTER */
+.footer {
+  margin: 0 auto 5rem;
+  text-align: center;
 }
