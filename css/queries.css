@@ -2,34 +2,68 @@
 instead, 1rem = 1em = 16px*/
 
 /* ****************************** */
-/* BELOW 1344px (Smaller desktops} */
+/* BELOW 1440px (Smaller desktops} */
 /* ****************************** */
 
-@media (max-width: 84em) {
-  .main_nav,
-  .main_header {
-    max-width: 120rem;
+@media (max-width: 90em) {
+  .menu,
+  .hero-section {
+    max-width: 140rem;
   }
 
-  .personal_data {
-    font-size: 4.4rem;
+  .menu {
+    margin: 0 auto;
   }
 
-  h1 {
-    margin-block-start: 5rem;
-    margin-block-end: 0;
+  .button-menu {
+    margin: 3rem 1rem;
   }
 
-  .gallery {
-    grid-template-columns: repeat(4, 1fr);
+  .main-header {
+    font-size: 5rem;
+    padding: 3rem;
   }
 
-  .work_gallery {
-    max-width: 120rem;
+  .container {
+    max-width: 140rem;
+    column-gap: 10rem;
+    grid-template-columns: 90rem 30rem;
   }
 
-  .w-100 {
-    height: 70rem;
+  .bio-img {
+    width: 30rem;
+  }
+
+  .education {
+    max-width: 130rem;
+    column-gap: 20rem;
+  }
+
+  .experience {
+    max-width: 140rem;
+    margin: 12rem auto 0;
+  }
+
+  .works {
+    max-width: 140rem;
+    grid-template-columns: 18rem 112rem;
+    align-items: center;
+  }
+
+  .samples {
+    max-width: 140rem;
+  }
+
+  .sample-header {
+    margin-left: -10rem;
+  }
+
+  .sample-img {
+    width: 120rem;
+  }
+
+  .cta {
+    max-width: 140rem;
   }
 }
 
@@ -40,395 +74,283 @@ instead, 1rem = 1em = 16px*/
 @media (max-width: 75em) {
   html {
     /* 9px / 16px =  */
-    font-size: 56.25%;
+    font-size: 50%;
   }
 
-  /* ****************************** */
-  /* BELOW 944px (Tablets) */
-  /* ****************************** */
-
-  @media (max-width: 59em) {
-    html {
-      font-size: 50%;
-      margin: 0 auto;
-    }
-
-    .main_nav,
-    .main_header {
-      max-width: 80rem;
-      grid-template-columns: 1fr;
-      padding: 0 3rem;
-      gap: 4rem;
-    }
-
-    .portrait,
-    .personal {
-      align-self: center;
-      margin-bottom: 2rem;
-    }
-
-    .portrait {
-      margin-left: 1rem;
-    }
-
-    .portrait img {
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 4.5rem;
-    }
-
-    .bio {
-      max-width: 70rem;
-      column-gap: 2rem;
-    }
-
-    .education {
-      max-width: 75rem;
-    }
-
-    .card {
-      max-width: 30rem;
-      font-size: 2rem;
-    }
-
-    .experience {
-      max-width: 70rem;
-    }
-
-    .work {
-      grid-template-columns: 1fr 3fr;
-      font-size: 2rem;
-    }
-
-    .work_gallery {
-      max-width: 70rem;
-    }
-
-    .gallery {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .contact {
-      max-width: 60rem;
-    }
-
-    /* MOBILE NAVIGATION */
-
-    .btn-mobile-nav {
-      display: block;
-      z-index: 9999;
-    }
-
-    .main-nav {
-      background-color: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(10px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      transform: translateX(100%);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.5s ease-in;
-
-      /* Hide the navigation */
-      /* Allows no transitions at all */
-      /* display: none; */
-
-      /*  1) Hide it visually */
-      opacity: 0;
-
-      /*  2) Make it unaccessible to mouse and keyboard */
-      pointer-events: none;
-
-      /* 3) Hide it from screen readers */
-      visibility: hidden;
-    }
-
-    .nav-open .main-nav {
-      opacity: 1;
-      pointer-events: auto;
-      visibility: visible;
-      transform: translateX(0);
-    }
-
-    .nav-open .icon-mobile-nav[name="close-outline"] {
-      display: block;
-    }
-
-    .nav-open .icon-mobile-nav[name="menu-outline"] {
-      display: none;
-    }
-
-    .main-nav-list {
-      flex-direction: column;
-      gap: 4.8rem;
-    }
-
-    .main-nav-link:link,
-    .main-nav-link:visited {
-      font-size: 3rem;
-    }
-
-    .work_gallery {
-      max-width: 100rem;
-    }
-
-    .w-100 {
-      height: 60rem;
-    }
+  .menu,
+  .hero-section {
+    max-width: 110rem;
   }
 
-  /* ****************************** */
-  /* BELOW 704px (Smaller Tablets) */
-  /* ****************************** */
-
-  @media (max-width: 44em) {
-    .grid--3--cols,
-    .grid--4--cols {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .diets {
-      grid-column: 1 / -1;
-      justify-self: center;
-    }
-
-    .heading-secondary {
-      margin-bottom: 4.8rem;
-    }
-
-    .pricing-plan {
-      width: 100%;
-    }
-
-    .grid-footer {
-      grid-template-columns: repeat(6, 1fr);
-    }
-
-    .logo-col,
-    .address-col {
-      grid-column: span 3;
-    }
-
-    .nav-col {
-      grid-row: 1;
-      grid-column: span 2;
-      margin-bottom: 3.2rem;
-    }
-
-    .work_gallery {
-      max-width: 80rem;
-    }
-
-    .w-100 {
-      height: 50rem;
-    }
+  .main-header {
+    text-align: center;
   }
 
-  /* ****************************** */
-  /* BELOW 544px (Phones) */
-  /* ****************************** */
-
-  @media (max-width: 34em) {
-    .main_header {
-      max-width: 45rem;
-    }
-
-    .portrait {
-      height: 12rem;
-      margin: 0;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-
-    .personal_data li {
-      font-size: 2rem;
-    }
-
-    .mb-2 {
-      gap: 1rem;
-    }
-
-    .bio {
-      max-width: 40rem;
-      column-gap: 2rem;
-      font-size: 1.6rem;
-    }
-
-    .bio img {
-      height: 12rem;
-      width: 12rem;
-    }
-
-    .education {
-      max-width: 40rem;
-      grid-template-columns: 1fr;
-      margin-bottom: 6rem;
-    }
-
-    .card {
-      margin: 0 auto;
-      max-width: 25rem;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    .work {
-      margin: 0 auto;
-      max-width: 40rem;
-      grid-template-columns: 3fr 7fr;
-      font-size: 1.6rem;
-    }
-
-    .work_gallery {
-      max-width: 40rem;
-    }
-
-    .gallery {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .gallery_item img {
-      height: 15rem;
-      width: 75%;
-    }
-    .hero {
-      padding: 0 3.2rem;
-    }
-
-    .section-hero {
-      padding: 2.4rem 0 6.4rem 0;
-    }
-
-    .btn,
-    .btn:link,
-    .btn:visited {
-      padding: 2.4rem 1.6rem;
-    }
-
-    .hero-img {
-      width: 80%;
-    }
-
-    .logos img {
-      height: 1.2rem;
-    }
-
-    .step-img-box:nth-child(2) {
-      grid-row: 1;
-    }
-
-    .step-img-box:nth-child(6) {
-      grid-row: 5;
-    }
-
-    .step-img-box {
-      transform: translateY(2.4rem);
-    }
-
-    .testimonials {
-      grid-template-columns: 1fr;
-    }
-
-    .contact {
-      max-width: 40rem;
-
-      margin-bottom: 8rem;
-    }
-
-    .cta {
-      max-width: 40rem;
-      grid-template-columns: 3fr 1fr;
-    }
-
-    .cta_image {
-      grid-column: 1 / 2;
-      grid-row: 1 / 4;
-    }
-
-    .cta img {
-      height: 20rem;
-    }
-
-    .cta svg {
-      height: 5rem;
-    }
-
-    .twitter,
-    .mail,
-    .fb {
-      grid-column: 2 / -1;
-      justify-self: center;
-    }
+  .container {
+    max-width: 110rem;
+    column-gap: 5rem;
+    grid-template-columns: 80rem 25rem;
   }
 
-  /* ****************************** */
-  /* Fixing Safari flexbox gap */
-  /* ****************************** */
-
-  .no-flexbox-gap .main-nav-list li:not(:last-child) {
-    margin-right: 4.8rem;
+  .bio-img {
+    width: 25rem;
+    align-self: center;
   }
 
-  .no-flexbox-gap .list-item:not(:last-child) {
-    margin-bottom: 1.6rem;
+  .education {
+    max-width: 120rem;
+    column-gap: 15rem;
   }
 
-  .no-flexbox-gap .list-icon:not(:last-child) {
-    margin-right: 1.6rem;
+  .experience {
+    max-width: 120rem;
+    margin: 12rem auto 0;
   }
 
-  .no-flexbox-gap .delivered-faces {
-    margin-right: 1.6rem;
+  .works {
+    max-width: 120rem;
+    grid-template-columns: 18rem 102rem;
+    align-items: center;
   }
 
-  .no-flexbox-gap .meal-attribute:not(:last-child) {
-    margin-bottom: 2rem;
+  .samples {
+    max-width: 120rem;
   }
 
-  .no-flexbox-gap .meal-icon {
-    margin-right: 1.6rem;
+  .sample-header {
+    margin-left: -5rem;
   }
 
-  .no-flexbox-gap .footer-row div:not(:last-child) {
-    margin-right: 6.4rem;
+  .sample-img {
+    width: 110rem;
   }
 
-  .no-flexbox-gap .social-links li:not(:last-child) {
-    margin-right: 2.4rem;
+  .cta {
+    max-width: 120rem;
+  }
+}
+/* ****************************** */
+/* BELOW 944px (Tablets) */
+/* ****************************** */
+
+@media (max-width: 59em) {
+  html {
+    margin: 0 auto;
   }
 
-  .no-flexbox-gap .footer-nav li:not(:last-child) {
-    margin-bottom: 2.4rem;
+  .menu,
+  .hero-section {
+    max-width: 100rem;
   }
 
-  @media (max-width: 75em) {
-    .no-flexbox-gap .main-nav-list li:not(:last-child) {
-      margin-right: 3.2rem;
-    }
-    .work_gallery {
-      max-width: 60rem;
-    }
-
-    .w-100 {
-      height: 30rem;
-    }
+  .secondary-header {
+    text-align: center;
   }
 
-  @media (max-width: 59em) {
-    .no-flexbox-gap .main-nav-list li:not(:last-child) {
-      margin-right: 0;
-      margin-bottom: 4.8rem;
-    }
+  .container {
+    max-width: 100rem;
+    column-gap: 0;
+    grid-template-columns: 80rem 20rem;
+  }
+
+  .bio-img {
+    width: 20rem;
+    align-self: center;
+  }
+
+  .education {
+    max-width: 100rem;
+    column-gap: 10rem;
+  }
+
+  .experience {
+    max-width: 100rem;
+    margin: 12rem auto 0;
+  }
+
+  .works {
+    max-width: 100rem;
+    grid-template-columns: 18rem 82rem;
+    align-items: center;
+  }
+
+  .samples {
+    max-width: 100rem;
+  }
+
+  .sample-header {
+    margin-left: -5rem;
+  }
+
+  .sample-img {
+    width: 90rem;
+  }
+
+  .cta {
+    max-width: 100rem;
+  }
+
+  .contact-link {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+/* ****************************** */
+/* BELOW 704px (Smaller Tablets) */
+/* ****************************** */
+
+@media (max-width: 44em) {
+  .menu,
+  .hero-section {
+    max-width: 80rem;
+  }
+
+  .secondary-header {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 80rem;
+    grid-template-columns: 60rem 20rem;
+  }
+
+  .bio-img {
+    width: 20rem;
+    align-self: center;
+  }
+
+  .skills {
+    grid-template-columns: 40rem 40rem;
+  }
+
+  .education {
+    max-width: 80rem;
+    column-gap: 10rem;
+  }
+
+  .education-list {
+    width: 30rem;
+  }
+
+  .experience {
+    max-width: 80rem;
+    margin: 12rem auto 0;
+  }
+
+  .works {
+    max-width: 80rem;
+    grid-template-columns: 18rem 62rem;
+    align-items: center;
+  }
+
+  .samples {
+    max-width: 80rem;
+  }
+
+  .sample-header {
+    margin-left: -5rem;
+  }
+
+  .sample-img {
+    width: 70rem;
+  }
+
+  .cta {
+    max-width: 80rem;
+  }
+
+  .contact-link {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+/* ****************************** */
+/* BELOW 544px (Phones) */
+/* ****************************** */
+
+@media (max-width: 34em) {
+  .menu,
+  .hero-section {
+    max-width: 60rem;
+  }
+
+  .portrait-img {
+    width: 25rem;
+  }
+
+  .container {
+    max-width: 60rem;
+    grid-template-columns: 1fr;
+  }
+
+  .bio-img {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    width: 40rem;
+    margin-top: 5rem;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-img {
+    visibility: hidden;
+  }
+
+  .skill-list {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 8rem;
+  }
+
+  .skills-flex li:last-child {
+    margin-bottom: 3rem;
+  }
+
+  .education {
+    max-width: 60rem;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .education-list {
+    width: 40rem;
+    margin-bottom: 5rem;
+  }
+
+  .experience {
+    max-width: 60rem;
+    margin: 12rem auto 0;
+  }
+
+  .works {
+    max-width: 60rem;
+    grid-template-columns: 18rem 42rem;
+    align-items: center;
+  }
+
+  .samples {
+    max-width: 60rem;
+  }
+
+  .sample-header {
+    margin-left: -5rem;
+  }
+
+  .sample-img {
+    width: 50rem;
+  }
+
+  .cta {
+    max-width: 60rem;
+  }
+
+  .contact-link {
+    width: 64px;
+    height: 64px;
   }
 }
