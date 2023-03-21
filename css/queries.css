@@ -276,8 +276,24 @@ instead, 1rem = 1em = 16px*/
     max-width: 45rem;
   }
 
+  .menu {
+    flex-direction: column;
+  }
+
+  .button-menu {
+    margin: 1rem 1rem;
+  }
+
   .portrait-img {
-    width: 20rem;
+    margin: 8rem 3rem;
+    width: 15rem;
+  }
+
+  .main-header {
+    font-size: 3rem;
+  }
+  .secondary-header {
+    font-size: 2rem;
   }
 
   .container {
