@@ -4,130 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="images/favicon_io/favicon-32x32.png" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
+      rel="apple-touch-icon"
+      href="images/favicon_io/apple-touch-icon.png"
     />
+    <link rel="manifest" href="images/favicon_io/site.webmanifest" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <link rel="icon" href="images/favicon.ico" />
     <title>Maksymilian Matoga</title>
   </head>
   <body>
-    <header class="main_header">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about_me"
-                  >About me</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#gallery"
-                  >Gallery</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact"
-                  >Contact</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Polski</a
-                >
-              </li>
-            </ul>
-          </div>
+    <header class="header">
+      <div class="menu">
+        <a href="#about-me" class="nav-link"
+          ><button class="button-menu">About me</button></a
+        >
+        <a href="#samples" class="nav-link"
+          ><button class="button-menu">Gallery</button></a
+        >
+        <a href="#contact" class="nav-link"
+          ><button class="button-menu">Contact</button></a
+        >
+        <a href="index.html" class="nav-link"
+          ><button class="button-menu">Polski</button></a
+        >
+      </div>
+      <div class="hero-section">
+        <div>
+          <img
+            class="portrait-img"
+            src="images/matoga maksymilian.webp"
+            alt="Maksymilian Matoga profile picture"
+          />
         </div>
-      </nav>
-
-      <div class="main_data">
-        <div class="portrait">
-          <a href="#">
-            <img
-              src="images/fake-human-circle-img.png"
-              alt="Random person picture"
-            />
-          </a>
-        </div>
-        <div class="personal">
-          <ul class="personal_data">
-            <li><h1>Maksymilian Matoga</h1></li>
-            <li>Aspiring Web Developer</li>
-          </ul>
+        <div class="personal-name">
+          <h1 class="main-header">Maksymilian Matoga</h1>
+          <h2 class="secondary-header">Aspiring Front-End Developer</h2>
         </div>
       </div>
     </header>
-    <section class="container">
-      <div class="about_me" id="about_me">
+    <section id="about-me">
+      <div class="container">
         <div class="bio">
-          <div class="bio_header">
-            <h2>Who am I?</h2>
-          </div>
-          <div class="bio_img_right">
-            <img src="images/aim_high.jpg" alt="Picture of child at the top" />
-          </div>
-          <div class="bio_text_left1 blue_text">
+          <h3 class="bio-header">Who am i?</h3>
+          <p class="bio-text">
             An ambitious person who aims high and finds himself overcoming its
             borders. I find motivation in the pursuit of achievement goal you
-            set yourself.
-          </div>
-          <div class="bio_img_left">
-            <img
-              src="images/new_technologies.jpg"
-              alt="Photo of a white robot on a brown background."
-            />
-          </div>
-          <div class="bio_text_right blue_text">
-            I am fascinated by new technologies. I follow their development and
-            new ones possibilities. I see them as an opportunity, not a threat.
-          </div>
-          <div class="bio_img_right">
-            <img
-              src="images/studying.jpg"
-              alt="Photo of a man working at a computer."
-            />
-          </div>
-          <div class="bio_text_left2 blue_text">
-            Learning and acquiring new skills are not for me problem. Every step
-            on my way to development gives me satisfaction.
+            set yourself. I am fascinated by new technologies. I follow their
+            development and new ones possibilities. I see them as an
+            opportunity, not a threat. Learning and acquiring new skills are not
+            for me problem. Every step on my way to development gives me
+            satisfaction.
+          </p>
+        </div>
+        <img
+          src="images/studying.jpg"
+          alt="Picture person who work on his computer"
+          class="bio-img"
+        />
+        <div class="skills">
+          <img
+            src="images/aim_high.jpg"
+            alt="Picture of kid on the top of ladder"
+            class="skill-img"
+          />
+          <div class="skill-list">
+            <ul class="skills-flex">
+              <h5 class="skills-header">Skills:</h5>
+              <li>HTML 5</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>jQuery - basic</li>
+              <li>Node.js - basic</li>
+              <li>SASS - on my way!</li>
+              <li>React.js - on my way!</li>
+              <li>MongoDB - on my way!</li>
+            </ul>
           </div>
         </div>
         <div class="education">
-          <h3 class="about_me_header">Education:</h3>
-          <div class="card university">
-            <ul>
+          <h5 class="education-header">Educations:</h5>
+          <div class="education-list">
+            <ul class="education-flex">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="study"
+                  width="64"
+                  height="64"
+                  fill="#495057"
+                  viewBox="0 0 256 256"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  />
+                    d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                  ></path>
                 </svg>
               </li>
               <li>2015 - 2011</li>
@@ -136,183 +121,126 @@
               <li>Discontinued for personal reasons</li>
             </ul>
           </div>
-          <div class="card school">
-            <ul>
+          <div class="education-list">
+            <ul class="education-flex">
               <li>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="study"
+                  width="64"
+                  height="64"
+                  fill="#495057"
+                  viewBox="0 0 256 256"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  />
+                    d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                  ></path>
                 </svg>
               </li>
               <li>2011 - 2007</li>
               <li>IT technical school in Dobczyce</li>
               <li>Web applications</li>
-              <li></li>
             </ul>
           </div>
         </div>
-        <div class="experience">
-          <h3 class="about_me_header">Work experience:</h3>
-          <ul class="work blue_text">
-            <li>2015 - 2023</li>
-            <li>
-              Polplast Polska sp. z o. o. - CAD/CAM technologist, operator
-              EDM/WEDM. Advanced level of work in NX and ZW3D.
-            </li>
-            <li>2010 - 2015</li>
-            <li>
-              Periodic work that allows you to gain independence (from service
-              in market after cleaning work).
-            </li>
-          </ul>
+      </div>
+      <div class="experience">
+        <h3 class="experience-header">Work experience:</h3>
+        <div class="works">
+          <div class="works-text">2015 - 2023</div>
+          <div class="works-text">
+            Polplast Polska sp. z o. o. - CAD/CAM technologist, operator
+            EDM/WEDM. Advanced level of work in NX and ZW3D.
+          </div>
+          <div class="works-text">2010 - 2015</div>
+          <div class="works-text">
+            PPeriodic work that allows you to gain independence (from service in
+            market after cleaning work).
+          </div>
         </div>
       </div>
     </section>
-    <section class="work_gallery" id="gallery">
-      <div class="gallery">
-        <div class="gallery_header">
-          <h3>Samples:</h3>
-        </div>
-        <div class="gallery_item">
-          <a
-            href="https://omnifood-maxm.netlify.app/"
-            target="_blank"
-            class="gallery_link"
-          >
-            <img
-              src="images/omnifood.png"
-              alt="Obrazek przedstawiający miniaturkę strony omnifood"
-              class="gallery_picture"
-            />
-          </a>
-        </div>
+    <section id="samples">
+      <div class="samples">
+        <h3 class="sample-header">Samples:</h3>
+        <img
+          src="images/omnifood.png"
+          alt="Picture of omnifood website"
+          class="sample-img"
+        />
       </div>
     </section>
-    <section class="contact" id="contact">
-      <div class="cta">
-        <!-- <div class="cta_header">
-          <h3>Można mnie znaleźć:</h3>
-        </div> -->
-        <div class="cta_image">
-          <img
-            src="images/contact.jpg"
-            alt="Zdjęcie przedstawiające słowo z gry scrabble 'Kontakt'"
-          />
-        </div>
-        <div class="twitter">
-          <a
-            href="https://twitter.com/MaksMatoga?t=Zud4VuCZ454f8VhFp2etUQ&s=09"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="64"
-              height="64"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <path
-                d="M128,88c0-22,18.5-40.3,40.5-40a40,40,0,0,1,36.2,24H240l-32.3,32.3A127.9,127.9,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,88,48Z"
-                fill="none"
-                stroke="#d0ebff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></path>
-            </svg>
-          </a>
-        </div>
-        <div class="fb">
-          <a
-            href="https://www.facebook.com/maksymilian.matoga/"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="64"
-              height="64"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <circle
-                cx="128"
-                cy="128"
-                r="96"
-                fill="none"
-                stroke="#d0ebff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></circle>
-              <path
-                d="M168,88H152a23.9,23.9,0,0,0-24,24V224"
-                fill="none"
-                stroke="#d0ebff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></path>
-              <line
-                x1="96"
-                y1="144"
-                x2="160"
-                y2="144"
-                fill="none"
-                stroke="#d0ebff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></line>
-            </svg>
-          </a>
-        </div>
-        <div class="mail">
-          <a href="mailto:maksymilian.matoga@protonmail.com">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="64"
-              height="64"
-              fill="#000000"
-              viewBox="0 0 256 256"
-            >
-              <rect width="256" height="256" fill="none"></rect>
-              <path
-                d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
-                fill="none"
-                stroke="#d0ebff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></path>
-              <polyline
-                points="224 56 128 144 32 56"
-                fill="none"
-                stroke="#d0ebff"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="16"
-              ></polyline>
-            </svg>
-          </a>
-        </div>
+    <section class="cta" id="contact">
+      <h3 class="cta-header">Catch me!</h3>
+      <div>
+        <ul class="contact-box">
+          <li>
+            <a
+              href="https://www.facebook.com/maksymilian.matoga"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="128"
+                height="128"
+                fill="#364fc7"
+                viewBox="0 0 256 256"
+                class="contact-link"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/MaksMatoga" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="128"
+                height="128"
+                fill="#364fc7"
+                viewBox="0 0 256 256"
+                class="contact-link"
+              >
+                <path
+                  d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/maksymilian-matoga-b2165b26a/"
+              target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="128"
+                height="128"
+                fill="#364fc7"
+                viewBox="0 0 256 256"
+                class="contact-link"
+              >
+                <path
+                  d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:maksymilian.matoga@protonmail.com" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="128"
+                height="128"
+                fill="#364fc7"
+                viewBox="0 0 256 256"
+                class="contact-link"
+              >
+                <path
+                  d="M128,24a104,104,0,0,0,0,208c21.51,0,44.1-6.48,60.43-17.33a8,8,0,0,0-8.86-13.33C166,210.38,146.21,216,128,216a88,88,0,1,1,88-88c0,26.45-10.88,32-20,32s-20-5.55-20-32V88a8,8,0,0,0-16,0v4.26a48,48,0,1,0,5.93,65.1c6,12,16.35,18.64,30.07,18.64,22.54,0,36-17.94,36-48A104.11,104.11,0,0,0,128,24Zm0,136a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
       </div>
     </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <footer class="footer">&copy;Maksymilian Matoga - 2023</footer>
   </body>
 </html>

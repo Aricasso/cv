@@ -267,10 +267,9 @@ instead, 1rem = 1em = 16px*/
 }
 
 /* ****************************** */
-/* BELOW 400px (Phones) */
+/* BELOW 480px (Phones) */
 /* ****************************** */
-
-@media (max-width: 25em) {
+@media (max-width: 30em) {
   .menu,
   .hero-section {
     max-width: 45rem;
@@ -379,5 +378,104 @@ instead, 1rem = 1em = 16px*/
   .contact-link {
     width: 64px;
     height: 64px;
+  }
+}
+
+/* BELOW 320px */
+
+@media (max-width: 20em) {
+  .menu,
+  .hero-section {
+    max-width: 20rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-img {
+    margin-top: 3rem;
+  }
+
+  .personal-name {
+    margin-top: 5rem;
+    grid-row: 1;
+  }
+
+  .container {
+    max-width: 20rem;
+    grid-template-columns: 1fr;
+  }
+
+  .bio-img {
+    width: 25rem;
+  }
+
+  .bio-text {
+    font-size: 2rem;
+    max-width: 25rem;
+  }
+
+  .skill-list {
+    max-width: 25rem;
+  }
+
+  .education {
+    max-width: 25rem;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .education-list {
+    width: 25rem;
+    margin-bottom: 5rem;
+  }
+
+  .education-header {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .experience {
+    max-width: 25rem;
+    margin: 12rem auto 0;
+  }
+
+  .works {
+    max-width: 25rem;
+    grid-template-columns: 12rem 13rem;
+  }
+
+  .works-text {
+    font-size: 1.8rem;
+  }
+
+  .samples {
+    max-width: 25rem;
+  }
+
+  .sample-header {
+    margin-left: -5rem;
+    font-size: 3rem;
+  }
+
+  .sample-img {
+    width: 15rem;
+  }
+
+  .cta {
+    max-width: 25rem;
+  }
+  .cta-header {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .contact-box {
+    margin-top: 5rem;
+  }
+  .contact-link {
+    width: 48px;
+    height: 48px;
   }
 }
